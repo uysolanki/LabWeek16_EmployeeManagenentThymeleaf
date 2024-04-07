@@ -1,0 +1,16 @@
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    url: jdbc:mysql://localhost:3306/employeedb?useSSL=false&serverTimezone=UTC
+#    password: ''
+#  application:
+#    name: EmployeeManagement
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#  profiles:
+#    active: prod
+#server:
+#  port: '8089'
+#  
