@@ -24,7 +24,7 @@ public class EmployeeController {
 	
 	private static final Logger logger=Logger.getLogger(EmployeeController.class);
 	
-	@GetMapping("/employees")
+	@RequestMapping("/employees")
 	public String listemployees(Model model)
 	{
 		logger.info("View All Employees Invoked");
@@ -59,7 +59,7 @@ public class EmployeeController {
 		return "redirect:/employees";
 	}
 	
-	@PostMapping("/employees")
+	@PostMapping("/employees/save")
 	public String saveEmployee(@ModelAttribute("employee") Employee e1)
 	{
 		employeeservice.saveEmployee(e1);
